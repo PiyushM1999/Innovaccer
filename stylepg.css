@@ -1,0 +1,81 @@
+body{
+	margin:0;
+	padding:0;
+	background:url(gaelle-marcel-1059953-unsplash.jpg);
+	background-size:cover;
+	background-position:center;
+	font-family:sans-serif;
+}
+
+.loginform{
+	width:320px;
+	height:420px;
+	background:black;
+	color:#fff;
+	top:50%;
+	left:50%;
+	position:absolute;
+	transform:translate(-50%,-50%);
+	box-sizing:border-box;
+	padding:70px 30px;
+}
+
+.avatar{
+	width:100px;
+	height:100px;
+	border-radius:50%;
+	position:absolute;
+	top:-50px;
+	left:calc(50% - 50px);
+}
+
+h1{
+	margin:0;
+	padding:0;
+	text-align:center;
+	font-size:22px;
+}
+
+.loginform input{
+	width:100%;
+	margin-bottom:20px;
+}
+
+.loginform input [type="text"], input [type="password"]{
+	border:none;
+	border-bottom:3px solid #fff;
+	background:transparent;
+	outline:none;
+	height:60px;
+	color:#fff;
+	font-size:16px;
+	box-shadow: 5px 4px 5px 10px #0ed461;
+	border-radius: 20px;
+}
+
+.loginform input[type="submit"]{
+	border:none;
+	outline:none;
+	height:40px;
+	background:#fb2525;
+	color:#fff;
+	font-size:15px;
+	border-radius:20px;
+}
+
+.loginform input [type="submit"]:hover{
+	cursor:pointer;
+	background:#ffc107;
+	color:#000;
+}
+
+.loginform a{
+	text-decoration:none;
+	font-size:12px;
+	line-height:20px;
+	color:dark grey;
+}
+
+.loginform a:hover{
+	color:#ffc107;
+}

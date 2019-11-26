@@ -1,0 +1,56 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+<title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<script type="text/javascript">
+ function fetch_item_data(){
+  $.ajax({
+  type: 'post',
+  url: 'fetch.php',
+
+  success: function (response) {
+   // We get the element having id of display_info and put the response inside it
+   $( '#det' ).html(response);
+  }
+  });
+  
+}
+setInterval(fetch_item_data, 1000)
+</script>
+
+</head>
+<body>
+		
+    <div class="container">
+  <h2 style="text-align:center;">Permission</h2>
+  <br><br>
+            
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Company</th>
+        <th>Purpose</th>
+        <th>Date From</th>
+        <th>Date from</th>
+        <th>Gadget</th>
+      </tr>
+    </thead>
+    <tbody id="det">
+
+    </tbody>
+  </table>
+</div>
+
+	 
+</body>
+</html>
